@@ -14,3 +14,7 @@ Route::get('/php-check', function () {
         'php_ini' => php_ini_loaded_file(),
     ];
 });
+
+Route::get('/chat', function(){
+    return view('chat');
+});
