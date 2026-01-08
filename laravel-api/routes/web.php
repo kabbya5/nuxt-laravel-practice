@@ -18,3 +18,7 @@ Route::get('/php-check', function () {
 Route::get('/chat', function(){
     return view('chat');
 });
+
+Route::get('/file-upload',function(){
+    return view('welcome');
+});
