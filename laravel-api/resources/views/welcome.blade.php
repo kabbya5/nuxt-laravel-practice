@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="form-control">
-        <h2> FIle Upload </h2>
-    </div>
+    <form action="{{route('file.uploads')}}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="form-group">
+            <label> File Upload </label>
+            <input type="file"  class="form-control" name="files[]" multiple>
+            <button type="submit"> Upload  </button>
+        </div>
+    </form> 
 </body>
 </html>

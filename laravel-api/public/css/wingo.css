@@ -1,0 +1,68 @@
+
+:root {
+  --body-color: #1e1762;
+  --body-surface-color:#0b0452;
+  --time-rounds-bg:#fdbb08;
+  --header-bg:#1f44b4;
+  --text-color:#ffffff;
+}
+
+.wingo{
+    background-color: var(--body-color);
+}
+
+.wingo-body .header{
+    background-color: var(--header-bg);
+    padding: 10px;
+}
+
+.wingo-body .header .container .title{
+    color: var(--text-color) !important;
+}
+
+.wingo-body .wingo-body-surface{
+    background-color: var(--body-surface-color);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.wingo-body .time-rounds{
+    background-color: var(--time-rounds-bg);
+    padding: 10px;
+    gap:10px;
+}
+
+.wingo-body .time{
+    background:var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.wingo-body .time .clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--time-rounds-bg);
+    color: #1e1762;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.wingo-body .time .clock .icon{
+    font-size: 20px;
+}
+
+.wingo-body .time p{
+   color: var(--text-color);
+   font-weight: 400;
+   font-size: 14px;
+   text-align: center;
+   margin-top: 10px;
+}
